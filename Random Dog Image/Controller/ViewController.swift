@@ -14,9 +14,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        requestRandomImage(completionHandler: handleRandomImageResponse(data:error:))
     }
-
-
+    
+    func handleImageFileResponse(image: UIImage? , error: Error?){
+        DispatchQueue.main.async {
+            self.dogImageView.image = image
+        }
+    }
+    
+    func handleRandomImageResponse(data: DogImage?, error: Error?){
+        if let imageURL = URL(string: data!.message){
+            requestImage(imageURL: imageURL, completionHandler: self.handleImageFileResponse(image:error:))
+        }
+    }
 }
 
