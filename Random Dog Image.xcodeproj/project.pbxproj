@@ -13,6 +13,8 @@
 		59F0279A23BDA58B0096B160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F0279823BDA58B0096B160 /* Main.storyboard */; };
 		59F0279C23BDA58C0096B160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F0279B23BDA58C0096B160 /* Assets.xcassets */; };
 		59F0279F23BDA58C0096B160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F0279D23BDA58C0096B160 /* LaunchScreen.storyboard */; };
+		59F027AA23BDABD50096B160 /* RandomDogImageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F027A923BDABD50096B160 /* RandomDogImageAPI.swift */; };
+		59F027AC23BDCF4E0096B160 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F027AB23BDCF4E0096B160 /* DogImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		59F0279B23BDA58C0096B160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59F0279E23BDA58C0096B160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59F027A023BDA58C0096B160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59F027A923BDABD50096B160 /* RandomDogImageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogImageAPI.swift; sourceTree = "<group>"; };
+		59F027AB23BDCF4E0096B160 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 		59F027A823BDA5A40096B160 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				59F027A923BDABD50096B160 /* RandomDogImageAPI.swift */,
+				59F027AB23BDCF4E0096B160 /* DogImage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				59F0279723BDA58B0096B160 /* ViewController.swift in Sources */,
+				59F027AC23BDCF4E0096B160 /* DogImage.swift in Sources */,
 				59F0279323BDA58B0096B160 /* AppDelegate.swift in Sources */,
+				59F027AA23BDABD50096B160 /* RandomDogImageAPI.swift in Sources */,
 				59F0279523BDA58B0096B160 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
